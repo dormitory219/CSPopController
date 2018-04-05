@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CSPopController_Example' do
+  pod 'CSPopController', :path => '../'
+
+  target 'CSPopController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
