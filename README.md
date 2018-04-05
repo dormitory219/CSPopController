@@ -20,6 +20,38 @@ it, simply add the following line to your Podfile:
 pod 'CSPopController'
 ```
 
+## How to Use
+
+//show popView
+```
+- (IBAction)showPop1:(id)sender
+{
+//设置主题theme
+    CSPopTheme *theme = [[CSPopTheme alloc] init];
+    
+theme.maskTypeTheme(CSPopThemeMaskTypeDimmed).cornerRadiusTheme(16.0f).maxPopupWidthTheme(280.0f).animationPresentionDurationTheme(0.3f).animationDismissDurationTheme(0.3f).shouldDismissOnBackgroundTouchTheme(NO).popThemePresentationStyleTheme(CSPPopThemePresentationStyleSlideInFromTopAndAngleBounce).popThemeDismissStyleTheme(CSPPopThemeDismissStyleSlideInToBottomAndAngle).horizontalOffsetTheme(0.f).verticalOffsetTheme(-60.f).dismissPointTheme(CGPointMake(100, 60));
+    
+    //创建弹窗内容自定义视图popView
+    CSPopView *popView = [CSPopView popView];
+    popView.delegate = self;
+    
+    //popController初始化
+    self.popController = [[CSPopController alloc] initWithContent:popView];
+    self.popController.theme = theme;
+    //popController 展示
+    [self.popController presentPopControllerAnimated:YES];
+}
+
+```
+
+//dismiss popView
+```
+- (void)dimissPopView:(CSPopView *)popView
+{
+    [self.popController dismissPopControllerAnimated:YES];
+}
+```
+
 ## Author
 
 dormitory219, 289067005@qq.com
