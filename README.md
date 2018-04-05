@@ -22,11 +22,28 @@ pod 'CSPopController'
 
 ## How to Use
 
+CSPopController是CSPopKit这套弹窗实现方案中的一个可独立拆分的组件，可以方便的将弹窗内容和展示样式分离开。
+**主体实现**
+
+1. CSPopTheme
+
+  负责弹窗主体的定制，包括弹窗宽度，圆角大小，展示动画，关闭动画，是否点击空白区域消失，展示动画时间，关闭动画时间，水平偏移，垂直偏移等等；
+  
+2. CSPopAnimation
+
+  动画处理工具类；
+  
+3. CSPopController
+
+  中心逻辑处理类
+
+**使用方法**
+
 //show popView
 ```
 - (IBAction)showPop1:(id)sender
 {
-//设置主题theme
+   //设置主题theme
     CSPopTheme *theme = [[CSPopTheme alloc] init];
     
 theme.maskTypeTheme(CSPopThemeMaskTypeDimmed).cornerRadiusTheme(16.0f).maxPopupWidthTheme(280.0f).animationPresentionDurationTheme(0.3f).animationDismissDurationTheme(0.3f).shouldDismissOnBackgroundTouchTheme(NO).popThemePresentationStyleTheme(CSPPopThemePresentationStyleSlideInFromTopAndAngleBounce).popThemeDismissStyleTheme(CSPPopThemeDismissStyleSlideInToBottomAndAngle).horizontalOffsetTheme(0.f).verticalOffsetTheme(-60.f).dismissPointTheme(CGPointMake(100, 60));
