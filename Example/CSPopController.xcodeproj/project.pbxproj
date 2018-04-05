@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E624CEFF914A883D01B3BCA /* Pods_CSPopController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132CD4103CD7D3EF9546074E /* Pods_CSPopController_Example.framework */; };
+		452291082075BFD700B2A96D /* CSPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452291072075BFD700B2A96D /* CSPopView.m */; };
+		4522910A2075BFE200B2A96D /* CSPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 452291092075BFE200B2A96D /* CSPopView.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,10 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E2BADC7CD5EBAFDD353FDC0 /* CSPopController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CSPopController.podspec; path = ../CSPopController.podspec; sourceTree = "<group>"; };
+		0E2BADC7CD5EBAFDD353FDC0 /* CSPopController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CSPopController.podspec; path = ../CSPopController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		126B70BE503678F3420B359D /* Pods-CSPopController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSPopController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSPopController_Example/Pods-CSPopController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		132CD4103CD7D3EF9546074E /* Pods_CSPopController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSPopController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		375DDF8DA748973CD0D220C0 /* Pods-CSPopController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSPopController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSPopController_Example/Pods-CSPopController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		452291062075BFD700B2A96D /* CSPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSPopView.h; sourceTree = "<group>"; };
+		452291072075BFD700B2A96D /* CSPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSPopView.m; sourceTree = "<group>"; };
+		452291092075BFE200B2A96D /* CSPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSPopView.xib; sourceTree = "<group>"; };
 		46FDC96B0AAD5C464CD31EB1 /* Pods_CSPopController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSPopController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CSPopController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSPopController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +68,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AFF770F82213288014F6538E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AFF770F82213288014F6538E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E9D65F4795219845BD9B64AF /* Pods-CSPopController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSPopController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSPopController_Tests/Pods-CSPopController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC6E44322B81FF2774013946 /* Pods-CSPopController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSPopController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSPopController_Tests/Pods-CSPopController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F6E74C29D81B49DC4BE09EE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F6E74C29D81B49DC4BE09EE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +142,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CSViewController.h */,
 				6003F5A6195388D20070C39A /* CSViewController.m */,
+				452291062075BFD700B2A96D /* CSPopView.h */,
+				452291072075BFD700B2A96D /* CSPopView.m */,
+				452291092075BFE200B2A96D /* CSPopView.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -278,6 +286,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				4522910A2075BFE200B2A96D /* CSPopView.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -320,10 +329,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CSPopController_Example/Pods-CSPopController_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSPopController/CSPopController.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSPopController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,6 +368,7 @@
 			files = (
 				6003F59E195388D20070C39A /* CSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CSViewController.m in Sources */,
+				452291082075BFD700B2A96D /* CSPopView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

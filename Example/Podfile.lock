@@ -1,0 +1,23 @@
+PODS:
+  - CSPopController (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - CSPopController (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  CSPopController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CSPopController: 84f3dc74869f68c6a4f684f0a8f76cefb3656cbe
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: be9e32f06d931ceb757ce9cc4e0131ec9e1b170b
+
+COCOAPODS: 1.5.0.beta.1

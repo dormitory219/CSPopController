@@ -1,0 +1,6 @@
+framework module CSPopController {
+  umbrella header "CSPopController-umbrella.h"
+
+  export *
+  module * { export * }
+}
